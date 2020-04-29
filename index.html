@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Weather Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <script type="text/javascript" src='script.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.0/d3.js'></script>
+    <script type="text/javascript" src='https://rawgit.com/pablomolnar/radial-progress-chart/master/dist/radial-progress-chart.js'></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id='nav'>
+            <h1>The Weather Dashboard</h1>
+        </div>
+        <div id='switch-container'>
+            <div id='celcius' class='display-inline-block'>
+                <span class='line-height'>&deg;C</span>
+            </div>
+            <div id='fahrenheit' class='display-inline-block'>
+                <span class='line-height'>&deg;F</span>
+            </div>
+        </div>
+        <div id='refresh'>
+            <i id='refresh-icon' class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+        </div>
+        <div id='temp-container'>
+            <h2 id='currently'>It is currently</h2>
+            <h1 id='temp'>17°c</h1>
+            <h2 id='city'>In Jamesburg, New Jersey</h2>
+        </div>
+        <div id='info-container'>
+            <h2>Forecast</h2>
+            <div id='low-container' class='display-inline-block'>
+                <h2>Low</h2>
+                <h1 id='low'>10°c</h1>
+            </div>
+            <div id='img-container' class='display-inline-block'>
+                <img id='condition-img' src="http://www.travelonline.com/assets/img/weather-icons/02d.svg" height="70" width="70">
+            </div>
+            <div id='high-container' class='display-inline-block'>
+                <h2>High</h2>
+                <h1 id='high'>19°c</h1>
+            </div>
+        </div>
+        <div id='end-container'>
+            <div class="container display-inline-block">
+                <div id='rain-radial' class="rain"></div>
+            </div>
+            <div id='extras-container' class='display-inline-block'>
+                <table id='extras' align="center">
+                    <tr>
+                        <td align="left" class='table-heading'>
+                            <h3>Conditions: </h3>
+                        </td>
+                        <td align="right" class="td-padding table-value">
+                            <h3 id='conditions'>Cloudy</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" class='table-heading'>
+                            <h3>Feels like: </h3>
+                        </td>
+                        <td align="right" class="td-padding table-value">
+                            <h3 id='feels-like'>24°C</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" class='table-heading'>
+                            <h3>Wind speed: </h3>
+                        </td>
+                        <td align="right" class='table-value'>
+                            <h3 id='wind-speed'>14kp/h</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" class='table-heading'>
+                            <h3>Wind direction: </h3>
+                        </td>
+                        <td align="right" class='table-value'>
+                            <h3 id='wind-direction'>SE</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" class='table-heading'>
+                            <h3>Visibility: </h3>
+                        </td>
+                        <td align="right" class='table-value'>
+                            <h3 id='visibility'>10 miles</h3>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container display-inline-block">
+                <div id='humidity-radial' class="humidity"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Created by
+            <a href="https://github.com/Yousiadel">Youstina Ibrahim</a>
+    </footer>
+</body>
+
+</html>

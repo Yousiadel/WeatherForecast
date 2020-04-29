@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(Nature1.jpg);
+    background-color: #FDFFFC;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	color: #011627;
+	text-align: center;
+}
+
+h3 {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+footer {
+	margin-top: 3%;
+	background: #011627;
+	color: white;
+	text-align: center;
+	font-size: 0.7em;
+	height: 5em;
+	line-height: 5em;
+}
+
+a {
+	color: white;
+}
+
+#container {
+    min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: -5em; 
+}
+
+#container:after {
+    content: "";
+    display: block;
+}
+
+footer, #container:after {
+    height: 5em; 
+}
+
+#nav {
+	background-color: #011627;
+	text-align: center;
+	padding: 2em;
+	color: white;
+}
+
+#switch-container {
+    border-radius: 0px 0px 10px 10px;
+    background: #011627;
+    padding: 20px; 
+    width: 150px;
+    height: 2em; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#refresh {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+#refresh-icon {
+	cursor: pointer;
+	margin-top: 0.5em;
+}
+
+#celcius {
+	height: 30px;
+	width: 50px;
+	background-color: #D62828;
+	color: white;
+	margin-left: auto;
+	text-align: center;
+	box-shadow: inset 0px 0px 2px 0px black;
+	cursor: pointer;
+}
+
+#fahrenheit {
+	height: 30px;
+	width: 50px;
+	background-color: white;
+	color: #D62828;
+	margin-right: auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+.line-height {
+	line-height: 30px;
+}
+
+#temp-container {
+	display: inline-block;
+	float: left;
+	margin-top: 3%;
+	width: 50%;
+}
+
+#info-container {
+	display: inline-block;
+	width: 50%;
+	padding-top: 3%;
+	text-align: center;
+}
+
+#info-container h1 {
+	font-size: 4em;
+}
+
+#info-container h2 {
+	font-size: 1.2em;
+}
+
+#end-container {
+	width: 100%;
+	text-align: center;
+	padding-top: 10em;
+}
+
+#extras {
+	text-align: center;
+}
+
+#extras-container {
+	padding: 0em 11em;
+	font-size: 0.9em;
+}
+
+.table-heading {
+	color: #011627;
+}
+
+.table-value {
+	color: black;
+}
+
+.td-padding {
+	padding-left: 8em;
+}
+
+.display-inline-block {
+	display: inline-block;
+}
+
+#img-container {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#temp {
+	text-align: center;
+	font-size: 5em;
+}
+
+#city {
+	color: #011627;
+}
+
+.calories {
+	width: 500px;
+}
+
+.container div {
+    padding: 20px;
+    width: 250px;
+}
+
+.rbc-label-start {
+    font-family: fontawesome;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.rbc-center-text {
+    font-family: 'Roboto', 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial;
+    fill: black;
+}
+
+.rain .rbc-center-text-line0 {
+    font-size: 3.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.humidity .rbc-center-text-line0 {
+    font-size: 3.5em;
+}
+
+@media only screen and (max-width: 1200px) {
+
+#temp-container, #info-container {
+    display: block;
+    float: none;
+    width: auto;
+	margin-top: 5em;
+}
+
+#end-container {
+	padding-top: 5em;
+}
+
+.container div {
+    width: 150px;
+}
+
+#extras-container {
+	font-size: 0.6em;
+	padding: 0em 2em;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+
+#nav h1 {
+    font-size: 1.5em;
+}
+
+#temp-container, #info-container {
+	margin-top: 2em;
+}
+
+#temp-container h1 {
+	font-size: 3em;
+}
+
+#temp-container h2 {
+	font-size: 1em;
+}
+
+#info-container h1 {
+	font-size: 3em;
+}
+
+#info-container h2 {
+	font-size: 1em;
+}
+
+#end-container {
+	padding-top: 2em;
+}
+}
