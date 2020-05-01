@@ -95,7 +95,7 @@ $(document).ready(function () {
 
 function getWeather() {
     // Conditions API call
-    $.getJSON("http://api.wunderground.com/api/cda005538d324769/conditions/q/autoip.json", function (data) {
+    $.getJSON("https://api.wunderground.com/api/cda005538d324769/conditions/q/autoip.json", function (data) {
         console.log("Weather data");
         console.log(data);
 
@@ -135,7 +135,7 @@ function getWeather() {
     });
 
     // Forecast API call
-    $.getJSON("http://api.wunderground.com/api/cda005538d324769/forecast/q/autoip.json", function (data) {
+    $.getJSON("https://api.wunderground.com/api/cda005538d324769/forecast/q/autoip.json", function (data) {
         console.log("Forecast data");
         console.log(data);
         document.getElementById('low').innerHTML = data.forecast.simpleforecast.forecastday[0].low.celsius + "&deg;c";
